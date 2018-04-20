@@ -14,7 +14,7 @@ namespace GummiBearKingdom.Models
         public int ProductId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        [DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
         public decimal? Cost { get; set; }
         public virtual ICollection<Product> Products { get; set; }
     }
