@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using GummiBearKingdom.Models;
 
-namespace GummiBearKingdom.Models
+namespace GummiBearKingdom.Data
 {
     public class DbInitializer
     {
