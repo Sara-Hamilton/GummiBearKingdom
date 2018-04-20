@@ -19,7 +19,7 @@
     @Html.EditorFor(model => model.Description)
 
     @Html.LabelFor(model => model.Cost)
-    @Html.EditorFor(model => model.Cost)
+    <span>$</span>@Html.EditorFor(model => model.Cost)
 
     <input type="submit" value="Save" class="btn btn-default" />
 }
