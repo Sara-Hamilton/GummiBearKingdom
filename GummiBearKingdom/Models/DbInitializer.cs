@@ -23,7 +23,13 @@ namespace GummiBearKingdom.Models
                 new Product(){ Name = "Shark Gummies", Description = "8 0z. bag of shark gummies", Cost = 4 },
                 new Product(){ Name = "Gummi Worms", Description = "16 oz. bag of rainbow colored gummi worms", Cost = 6 },
                 new Product(){ Name = "Red Hot Gummies", Description = "16 oz. bag  of red hot gummi bears", Cost = 3 },
+            };
+
+            foreach (Product p in products)
+            {
+                context.Products.Add(p);
             }
+            context.SaveChanges();
         }
     }
 }
