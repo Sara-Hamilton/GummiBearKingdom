@@ -14,7 +14,7 @@ namespace GummiBearKingdom.Models
         public int ProductId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int Cost { get; set; }
+        public string Cost { get; set; }
         public virtual ICollection<Product> Products { get; set; }
     }
 }

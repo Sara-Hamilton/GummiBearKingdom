@@ -27,9 +27,9 @@
 
     {
         <tr>
-            <td>@Html.DisplayFor(modelPlayer => listProduct.Name)</td>
-            <td>@Html.DisplayFor(modelPlayer => listProduct.Description)</td>
-            <td>@Html.DisplayFor(modelPlayer => listProduct.Cost)</td>
+            <td>@Html.DisplayFor(modelProduct => listProduct.Name)</td>
+            <td>@Html.DisplayFor(modelProduct => listProduct.Description)</td>
+            <td>@Html.DisplayFor(modelProduct => listProduct.Cost)</td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) |
                 @Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) |
@@ -42,4 +42,5 @@
 
 </table>
 
-@Html.ActionLink("Add new Product", "Create")
+@Html.ActionLink("Add new Product", "Create") | 
+@Html.ActionLink("Delete all Products", "DeleteAll")

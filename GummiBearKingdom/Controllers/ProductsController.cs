@@ -69,8 +69,8 @@ namespace GummiBearKingdom.Controllers
 
         public ActionResult DeleteAll(int id)
         {
-            var products = db.Products;
-            return View(products);
+            List<Product> model = db.Products.ToList();
+            return View(model);
         }
 
         [HttpPost, ActionName("DeleteAll")]
