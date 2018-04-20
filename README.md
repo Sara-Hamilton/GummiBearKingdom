@@ -63,6 +63,7 @@ This is the Epicodus weekly project for week 1 of the .NET course.  Its purpose 
 
   ```
   $ dotnet ef database update
+  $ dotnet ef database update 20180420190206_ComplexDataModel2
   ```
 *  _Run the program_
   ```
