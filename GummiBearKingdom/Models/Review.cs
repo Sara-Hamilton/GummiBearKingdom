@@ -14,6 +14,7 @@ namespace GummiBearKingdom.Models
         {
             this.Reviews = new HashSet<Review>();
         }
+
         [Key]
         public int ReviewId { get; set; }
         public string Title { get; set; }
