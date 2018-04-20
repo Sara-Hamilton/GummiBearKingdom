@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GummiBearKingdom.Models
 {
+    [Table("Products")]
     public class Product
     {
         [Key]
