@@ -8,8 +8,8 @@ using GummiBearKingdom.Models;
 namespace GummiBearKingdom.Migrations
 {
     [DbContext(typeof(GummiDbContext))]
-    [Migration("20180420191543_changeTableBackToPlural")]
-    partial class changeTableBackToPlural
+    [Migration("20180420205044_DeletedSeriesOfBadMigrations")]
+    partial class DeletedSeriesOfBadMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

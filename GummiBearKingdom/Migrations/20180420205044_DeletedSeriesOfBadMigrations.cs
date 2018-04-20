@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GummiBearKingdom.Migrations
 {
-    public partial class changeTableBackToPlural : Migration
+    public partial class DeletedSeriesOfBadMigrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
