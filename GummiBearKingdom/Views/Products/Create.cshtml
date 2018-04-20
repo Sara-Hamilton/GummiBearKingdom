@@ -15,8 +15,9 @@
     @Html.LabelFor(model => model.Description)<br />
     @Html.EditorFor(model => model.Description)<br />
     @Html.LabelFor(model => model.Cost)<br />
-    <span>$</span>@Html.EditorFor(model => model.Cost)<br />
-
+   
+    
+    <%= Html.EditorFor(model => model.Cost) %>
     <input type="submit" value="Create" class="btn btn-default" />
 
 }
