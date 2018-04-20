@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace GummiBearKingdom.Models
 {
-    public class GummiContext : DbContext
+    public class GummiDbContext : DbContext
     {
-        public ToDoDbContext()
+        public GummiDbContext()
         {
         }
 
@@ -14,9 +17,9 @@ namespace GummiBearKingdom.Models
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseMySql(@"Server=localhost;Port=8889;database=gummi_bear_kingdom;uid=root;pwd=root;");
-        ]
+        }
 
-        public ToDoDbContext(DbContextOptions<ToDoDbContext> options)
+            public GummiDbContext(DbContextOptions<GummiDbContext> options)
             : base(options)
         {
         }
